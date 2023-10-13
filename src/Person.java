@@ -28,7 +28,7 @@ public class Person {
         int nowDay = date2.getDayOfMonth();
         int nowMonth = date2.getMonthValue();
         int nowYear = date2.getYear();
-        if (nowDay >= birthDay && nowMonth >= birthMonth || nowMonth >= birthMonth) {
+        if (nowDay >= birthDay && nowMonth >= birthMonth || nowMonth > birthMonth) {
             return (nowYear + 1) + "-" + birthMonth + "-" + birthDay;
         }
         return nowYear + "-" + birthMonth + "-" + birthDay;
